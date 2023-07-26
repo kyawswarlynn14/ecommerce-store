@@ -21,8 +21,12 @@ const Billboard: React.FC<BillboardProps> = ({
           <div className="font-bold text-[#00FF00] text-4xl lg:text-6xl sm:max-w-xl max-w-xs pr-10">
             {data.label}
           </div>
-          <p className="text-white pl-2 pr-10 text-xl font-bold">
-            သဘာဝစစ်စစ်ရဲ့ အရသာ နမ့်ဆန်တအောင်း(ပလောင်)‌ဒေသထွက် အဆင့်မြင့် လက်ဖက်ခြောက်
+          <p className="hidden md:block text-white pl-2 pr-10 text-xl font-bold">
+            သဘာဝစစ်စစ် ရဲ့ အရသာ နမ့်ဆန် တအောင်း (ပလောင်)‌ ဒေသထွက် အဆင့်မြင့် လက်ဖက်ခြောက်
+          </p>
+
+          <p className="block md:hidden text-white pl-2 pr-10 text-xl font-bold">
+            သဘာဝစစ်စစ်ရဲ့ အရသာ <br /> နမ့်ဆန် တအောင်း (ပလောင်)‌ ဒေသထွက် <br /> အဆင့်မြင့် လက်ဖက်ခြောက်
           </p>
       </div>
     </div>

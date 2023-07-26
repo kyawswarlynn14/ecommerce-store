@@ -32,14 +32,14 @@ const MobileFilters: React.FC<MobileFiltersProps> = ({
         <Plus size={20} />
       </Button>
 
-      <Dialog open={open} as="div" className="relative z-40 lg:hidden" onClose={onClose}>
+      <Dialog open={open} as="div" className="relative z-40 md:hidden" onClose={onClose}>
         
         {/* Background color and opacity */}
         <div className="fixed inset-0 bg-black bg-opacity-25" />
         
         {/* Dialog position */}
         <div className="fixed inset-0 z-40 flex">
-          <Dialog.Panel className="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white py-4 pb-6 shadow-xl">
+          <Dialog.Panel className="relative ml-auto flex h-full w-52 max-w-xs flex-col overflow-y-auto bg-slate-800 py-4 pb-6 shadow-xl rounded-l-lg">
             
             {/* Close button */}
             <div className="flex items-center text-black justify-end px-4">

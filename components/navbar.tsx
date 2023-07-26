@@ -6,6 +6,7 @@ import NavbarActions from "@/components/navbar-actions";
 import getCategories from "@/actions/get-categories";
 import Image from "next/image";
 import logo from "../app/logo1.jpg"
+import NavFilters from "./nav-filters";
 
 const Navbar = async () => {
   const categories = await getCategories();
@@ -15,9 +16,17 @@ const Navbar = async () => {
       <Container>
         <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center">
           <Link href="/" className="absolute">
-            <Image className="w-8 h-8 rounded-full" src={logo} alt="logo" />
+            <Image className="w-10 h-10 rounded-full" src={logo} alt="logo" />
           </Link>
-          <MainNav data={categories} />
+
+          <div className="ml-16 hidden md:block">
+            <MainNav data={categories} />
+          </div>
+
+          <div className="ml-16 block md:hidden">
+            <NavFilters data={categories} />
+          </div>
+
           <NavbarActions />
         </div>
       </Container>
