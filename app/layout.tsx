@@ -11,7 +11,7 @@ import './globals.css'
 const font = Urbanist({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Store',
+  title: 'Palaung Min Thar',
   description: 'Store - The place for all your purchases.',
 }
 
