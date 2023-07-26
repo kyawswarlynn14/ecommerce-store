@@ -23,7 +23,7 @@ const MainNav: React.FC<MainNavProps> = ({
 
   return (
     <nav
-      className="mx-6 flex items-center space-x-4 lg:space-x-6"
+      className="ml-10 mr-2 flex items-center space-x-4 lg:space-x-6"
     >
       {routes.map((route) => (
         <Link
@@ -37,6 +37,10 @@ const MainNav: React.FC<MainNavProps> = ({
           {route.label}
       </Link>
       ))}
+
+      <a href="#contact" className="text-sm md:text-base font-medium transition-colors text-neutral-300 hover:text-white">
+        Contact Us
+      </a>
     </nav>
   )
 };

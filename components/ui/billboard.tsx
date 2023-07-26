@@ -11,17 +11,19 @@ const Billboard: React.FC<BillboardProps> = ({
 }) => {
   console
   return ( 
-    <div className="p-4 sm:p-6 lg:p-8 rounded-xl overflow-hidden ">
+    <div className="p-4 sm:p-6 lg:p-8 rounded-xl overflow-hidden relative ">
       <div style={{ backgroundImage: `url(${data?.imageUrl})` }} className="h-80 md:h-96 w-auto rounded-xl relative  overflow-hidden bg-cover">
-        <div className="h-full w-full flex flex-col justify-center items-center text-center gap-y-8">
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+      </div>
+
+      <div className="h-full w-full flex flex-col justify-center items-center text-center gap-y-8 absolute top-0 ">
           <Image src={logo} alt="logo" className="h-20 w-20 md:h-40 md:w-40 rounded-full" />
-          <div className="font-bold text-white text-3xl sm:text-5xl lg:text-6xl sm:max-w-xl max-w-xs">
+          <div className="font-bold text-[#00FF00] text-4xl lg:text-6xl sm:max-w-xl max-w-xs">
             {data.label}
           </div>
-          <p className="text-white text-lg md:text-2xl font-bold">
+          <p className="text-white pl-2 pr-10 text-xl font-bold">
             သဘာဝစစ်စစ်ရဲ့ အရသာ နမ့်ဆန်တအောင်း(ပလောင်)‌ဒေသထွက် အဆင့်မြင့် လက်ဖက်ခြောက်
           </p>
-        </div>
       </div>
     </div>
    );
