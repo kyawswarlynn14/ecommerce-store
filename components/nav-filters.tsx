@@ -57,8 +57,12 @@ const NavFilters: React.FC<NavFiltersProps> = ({
             </div>
 
             <nav
-                className="flex flex-col mt-4 mx-6 gap-4"
-                >
+                className="flex flex-col mt-4 mx-6 gap-4">
+
+                <a href="/" className="rounded-md text-black p-2 bg-white border-2 border-green-500">
+                    Home
+                </a>
+                
                 {routes.map((route) => (
                     <Link
                     key={route.href}

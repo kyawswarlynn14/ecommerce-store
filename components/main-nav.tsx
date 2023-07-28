@@ -25,6 +25,10 @@ const MainNav: React.FC<MainNavProps> = ({
     <nav
       className="ml-10 mr-2 flex items-center space-x-4 lg:space-x-6"
     >
+      <a href="/" className="text-sm md:text-base font-medium transition-colors text-neutral-300 hover:text-white">
+        Home
+      </a>
+
       {routes.map((route) => (
         <Link
           key={route.href}
