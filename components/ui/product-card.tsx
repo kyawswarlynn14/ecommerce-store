@@ -72,7 +72,7 @@ const ProductCard: React.FC<ProductCard> = ({
       <div className="flex items-center justify-between">
         <Currency value={data?.price} />
 
-        <a href="https://forms.gle/2TQfKnayeojaMbeK7" target="_blank" onClick={(event) => event.stopPropagation()}>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtDuhI_jXPPGawUoQNkwwT0B558juS9ixfrA73T5mY0GgGjw/viewform?usp=sf_link" target="_blank" onClick={(event) => event.stopPropagation()}>
           <Button className="p-2 py-1">Order Now</Button>
         </a>
       </div>
