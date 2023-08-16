@@ -26,6 +26,10 @@ const Info: React.FC<InfoProps> = ({ data }) => {
         <p className="text-2xl text-gray-900">
           <Currency value={data?.price} />
         </p>
+        
+        <a href="http://m.me/palaungminthar14" target="_blank">
+          <Button className="p-2 py-1">Message</Button>
+        </a>
       </div>
       <hr className="my-4" />
       <div className="flex flex-col gap-y-6">

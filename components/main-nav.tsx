@@ -25,7 +25,7 @@ const MainNav: React.FC<MainNavProps> = ({
     <nav
       className="ml-10 mr-2 flex items-center space-x-4 lg:space-x-6"
     >
-      <a href="/" className="text-sm md:text-base font-medium transition-colors text-neutral-300 hover:text-white">
+      <a href="/" className="text-sm md:text-base font-medium transition-colors text-neutral-300 hover:text-white hover:underline underline-offset-4">
         Home
       </a>
 
@@ -34,15 +34,15 @@ const MainNav: React.FC<MainNavProps> = ({
           key={route.href}
           href={route.href}
           className={cn(
-            'text-sm md:text-base font-medium transition-colors hover:text-white',
-            route.active ? 'text-white underline underline-offset-4' : 'text-neutral-300'
+            'text-sm md:text-base font-medium transition-colors hover:text-white hover:underline underline-offset-4',
+            route.active ? 'text-white border-b-2 border-green-500 hover:no-underline' : 'text-neutral-300'
           )}
         >
           {route.label}
       </Link>
       ))}
 
-      <a href="#contact" className="text-sm md:text-base font-medium transition-colors text-neutral-300 hover:text-white">
+      <a href="#contact" className="text-sm md:text-base font-medium transition-colors text-neutral-300 hover:text-white hover:underline underline-offset-4">
         Contact Us
       </a>
     </nav>

@@ -10,6 +10,7 @@ import IconButton  from "@/components/ui/icon-button";
 import usePreviewModal from "@/hooks/use-preview-modal";
 import useCart from "@/hooks/use-cart";
 import { Product } from "@/types";
+import Button from "./button";
 
 interface ProductCard {
   data: Product;
@@ -39,14 +40,14 @@ const ProductCard: React.FC<ProductCard> = ({
   };
   
   return ( 
-    <div onClick={handleClick} className="bg-white text-black group cursor-pointer rounded-xl border p-3 space-y-4">
+    <div onClick={handleClick} className="bg-white text-center text-black group cursor-pointer rounded-xl border p-3 space-y-4 flex flex-col justify-between">
       {/* Image & actions */}
       <div className="aspect-square rounded-xl bg-gray-100 relative">
         <Image 
           src={data.images?.[0]?.url} 
           alt="" 
           fill
-          className="aspect-square object-cover rounded-md"
+          className="aspect-square object-cover rounded-md hover:-translate-y-3 transition ease-in-out duration-1000"
         />
         <div className="md:opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5">
           <div className="flex gap-x-6 justify-center">
@@ -70,6 +71,10 @@ const ProductCard: React.FC<ProductCard> = ({
       {/* Price & Reiew */}
       <div className="flex items-center justify-between">
         <Currency value={data?.price} />
+
+        <a href="http://m.me/palaungminthar14" target="_blank" onClick={(event) => event.stopPropagation()}>
+          <Button className="p-2 py-1">Message</Button>
+        </a>
       </div>
     </div>
   );

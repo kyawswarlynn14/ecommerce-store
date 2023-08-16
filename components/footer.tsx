@@ -16,7 +16,7 @@ const Footer = () => {
             href="https://maps.app.goo.gl/PCctunn537MLyMpy8"
             className="text-white no-underline"
           >
-            <div className="flex border-b-2 border-dashed cursor-pointer gap-4 md:text-lg pb-4 mb-4 hover:text-blue-500">
+            <div className="flex border-b-2 border-dashed cursor-pointer gap-4 md:text-lg pb-4 mb-4 hover:underline underline-offset-4">
               <GoLocation className="text-2xl text-yellow-400" />
 
               <p>63(B), 20x21ကြား၊ အောင်မြေသာစံမြို့နယ်၊ မန္တလေးမြို့။</p>
@@ -27,7 +27,7 @@ const Footer = () => {
           href="https://www.facebook.com/profile.php?id=100064007971916&mibextid=ZbWKwL"
           className="text-white no-underline"
         >
-          <div className="flex border-b-2 border-dashed cursor-pointer gap-4 md:text-lg pb-4 mb-4 hover:text-blue-500">
+          <div className="flex border-b-2 border-dashed cursor-pointer gap-4 md:text-lg pb-4 mb-4 hover:underline underline-offset-2">
             <AiFillFacebook className="text-2xl text-blue-600" />
 
             <p>ပလောင်မင်းသား</p>
@@ -45,10 +45,10 @@ const Footer = () => {
         </div>
 
         <Link href="https://t.me/Jerryang7" className="text-white no-underline">
-          <div className="flex border-b-2 border-dashed cursor-pointer gap-4 md:text-lg pb-4 mb-4 hover:text-blue-500">
+          <div className="flex border-b-2 border-dashed cursor-pointer gap-4 md:text-lg pb-4 mb-4 hover:underline underline-offset-4">
             <FaViber className="text-2xl text-purple-700" />
             <FaTelegram className="text-2xl text-blue-500" />
-            <p>09-753748700</p>
+            <p>Jerryang</p>
           </div>
         </Link>
         </div>
