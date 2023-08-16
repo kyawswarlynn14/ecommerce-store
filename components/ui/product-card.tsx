@@ -72,8 +72,8 @@ const ProductCard: React.FC<ProductCard> = ({
       <div className="flex items-center justify-between">
         <Currency value={data?.price} />
 
-        <a href="http://m.me/palaungminthar14" target="_blank" onClick={(event) => event.stopPropagation()}>
-          <Button className="p-2 py-1">Message</Button>
+        <a href="https://forms.gle/2TQfKnayeojaMbeK7" target="_blank" onClick={(event) => event.stopPropagation()}>
+          <Button className="p-2 py-1">Order Now</Button>
         </a>
       </div>
     </div>

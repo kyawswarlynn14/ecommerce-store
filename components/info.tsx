@@ -27,8 +27,8 @@ const Info: React.FC<InfoProps> = ({ data }) => {
           <Currency value={data?.price} />
         </p>
         
-        <a href="http://m.me/palaungminthar14" target="_blank">
-          <Button className="p-2 py-1">Message</Button>
+        <a href="https://forms.gle/2TQfKnayeojaMbeK7" target="_blank">
+          <Button className="p-2 py-1">Order Now</Button>
         </a>
       </div>
       <hr className="my-4" />
