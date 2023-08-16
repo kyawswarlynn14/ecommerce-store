@@ -48,7 +48,7 @@ const Footer = () => {
           <div className="flex border-b-2 border-dashed cursor-pointer gap-4 md:text-lg pb-4 mb-4 hover:underline underline-offset-4">
             <FaViber className="text-2xl text-purple-700" />
             <FaTelegram className="text-2xl text-blue-500" />
-            <p>Jerryang</p>
+            <p>Jerryang , 09-753748700</p>
           </div>
         </Link>
         </div>
