@@ -12,7 +12,11 @@ const Billboard: React.FC<BillboardProps> = ({
   console
   return ( 
     <div className="p-4 sm:p-6 lg:p-8 rounded-xl overflow-hidden relative ">
-      <div style={{ backgroundImage: `url(${data?.imageUrl})` }} className="h-80 md:h-96 w-auto rounded-xl relative  overflow-hidden bg-cover">
+      <div style={{ backgroundImage: `url('/images/billboard1.jpg')` }} className="md:hidden h-80 md:h-[440px] w-auto rounded-xl relative  overflow-hidden bg-cover">
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+      </div>
+
+      <div style={{ backgroundImage: `url(${data?.imageUrl})` }} className="hidden md:block h-80 md:h-[440px] w-auto rounded-xl relative  overflow-hidden bg-cover">
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
 
